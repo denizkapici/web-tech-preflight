@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Etkinlik Güncelle</title>
+</head>
+<body>
+    <header>
+        <h1>Etkinlik Güncelle</h1>
+        <nav>
+            <a href="../index.html">Ana Sayfa (Etkinlikler)</a> &nbsp;|&nbsp; 
+            <a href="etkinlik-detay.html">Detay</a> &nbsp;|&nbsp; 
+            <a href="etkinlik-ekle.html">Ekle</a>  &nbsp;|&nbsp;
+            <a href="etkinlik-guncelle.html">Güncelle</a>
+        </nav>
+        <hr>
+    </header>
+    
+    <main>
+        <br>
+        <form action="#" method="POST">
+            <p>
+                <label for="ad"><strong>Etkinlik Adı:</strong></label><br>
+                <input type="text" id="ad" name="ad" value="Kariyer Günleri 2026" size="40" required>
+            </p>
+
+            <p>
+                <label for="kategori"><strong>Kategori:</strong></label><br>
+                <select id="kategori" name="kategori" required>
+                    <option value="Seminer" selected>Seminer</option>
+                    <option value="Atölye">Atölye</option>
+                    <option value="Atölye">Robatik</option>
+                    <option value="Atölye">Orantasyon</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="tarih"><strong>Tarih/Saat:</strong></label><br>
+                <input type="datetime-local" id="tarih" name="tarih" value="2026-10-12T14:00" required>
+            </p>
+
+            <p>
+                <label for="aciklama"><strong>Açıklama:</strong></label><br>
+                <textarea id="aciklama" name="aciklama" rows="5" cols="42" required>Kariyer günleri kapsamında sektör liderleri öğrencilerle buluşuyor.</textarea>
+            </p>
+
+            <br>
+            <button type="submit" style="padding: 5px 15px;">Güncelle</button>
+        </form>
+        <br>
+    </main>
+    
+    <hr>
+</body>
+</html>
