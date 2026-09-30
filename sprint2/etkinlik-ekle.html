@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etkinlik Ekle</title>
+    <link rel="stylesheet" href="css/2416501067.css">
+</head>
+<body>
+    <header>
+        <h1>Etkinlik Ekle</h1>
+        <nav aria-label="Ana menü">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="etkinlikler.html">Etkinlikler</a>
+            <a href="etkinlik-ekle.html" aria-current="page">Ekle</a>
+            <a href="etkinlik-guncelle.html">Güncelle</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <div class="alan">
+                <label for="ad">Etkinlik adı</label>
+                <input type="text" id="ad" name="ad" required aria-describedby="ad-hata">
+                <p class="hata-mesaji" id="ad-hata">Etkinlik adı boş bırakılamaz.</p>
+            </div>
+            <div class="alan">
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori" required aria-describedby="kategori-hata">
+                    <option value="">Seçiniz</option>
+                    <option value="Seminer">Seminer</option>
+                    <option value="Atölye">Atölye</option>
+                    <option value="Söyleşi">Söyleşi</option>
+                    <option value="Robotik">Robotik</option>
+                    <option value="Oryantasyon">Oryantasyon</option>
+                </select>
+                <p class="hata-mesaji" id="kategori-hata">Lütfen bir kategori seçin.</p>
+            </div>
+            <div class="alan">
+                <label for="tarih">Tarih</label>
+                <input type="datetime-local" id="tarih" name="tarih" required aria-describedby="tarih-hata">
+                <p class="hata-mesaji" id="tarih-hata">Lütfen bir tarih girin.</p>
+            </div>
+            <div class="alan">
+                <label for="aciklama">Açıklama</label>
+                <textarea id="aciklama" name="aciklama" rows="5" required aria-describedby="aciklama-hata"></textarea>
+                <p class="hata-mesaji" id="aciklama-hata">Açıklama boş bırakılamaz.</p>
+            </div>
+
+            <button type="submit">Kaydet</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Deniz Kapıcı - SDÜ Bilgisayar Mühendisliği - 2026</p>
+    </footer>
+</body>
+</html>
